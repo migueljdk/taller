@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style:none;
+}
+.encabezado{
+    width: 800px;
+    background:#FFFFFF;
+    color:#2F4F4F;
+}
+
+.encabezadoTitulos{
+    font-family:Arial;
+    font-size:10px;
+    text-align:center;
+
+}
+
+.encabezadoSistema{
+    font-family:Calibri;
+    font-size:10px;
+    color:#4682B4	;
+    text-align:left;
+}
+
+body{
+    background: #0f4c75; /*fondo de la página*/
+}
+
+/*header{
+    width: 100%;
+}*/
+
+
+/*El cuadro del menú - DIV*/
+.navegacion{
+    float: left;
+    padding: 10px 0px 0px 20px;  
+    background:#000000;/*#154360  #1B4F72*/ /*#4682B4;*/ /*#313D52; *//*fondo del menú principal*/
+    font-family:Sans-serif;
+    width: 1865px;  /*ancho total del menú*/
+    margin: 0px auto; /*separación de la final anterior*/
+    font-family:Sans-serif;
+}
+
+
+.navegacion ul{
+/*    list-style: none;*/
+    text-align:center;  /* original center*/
+    margin: 0px;  
+    list-style: none;
+    padding: 0px 0px 0px 20px;
+    padding-right: 20px;
+
+}
+
+.navegacion ul li {
+    display: inline-block; /* que NO se junte el texto */
+    line-height: 15px;
+    
+}
+
+
+/*Opciones principales*/
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{ /* configura las opciones del menú*/
+    display: block;
+    padding: 40px 10px; /*altura del menú - separación de opciones*/
+    color: white;  /*color de letra de primeras opciones*/
+    font-size:20px;
+    text-decoration: none;
+    width:250px; /*ancho de cada opción*/	
+}
+
+.menu li a:hover{ /*cuando se pasa el ratón por encima*/
+    display:block;
+    color: #f04646; /*cambio de color del enlace*/
+    transition: all .3s;
+
+}
+
+/* Opciones del primer Submenu*/
+
+.submenu{
+    position: absolute;
+    background:#F28989 ;
+    font-size:15px;
+    width: 200%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.submenu li a{
+    display: block;   
+    padding: 0px;
+    padding-left: 25px;
+    padding-bottom: 4px;
+    color:black ;
+    text-decoration: none;
+    text-align:left; /*alineación del texto del 1er sub menú*/ 
+}
+
+.submenu li a:hover{ /*cuando se pasa el rat�n por encima*/
+    display:block;
+    color: white; /*cambio de color del enlace*/
+    font-size:11px;
+    transition: all .3s;
+}
+
+.menu li:hover .submenu{ /*cuando se pasa el por encima hace visible el sub men� oculto*/
+    visibility: visible;
+    opacity: 1;	
+}
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+    background: #1B4F72; /*#154360;*/ /*#4682B4;*/
+    color: white;/* color de letra */
+    height: 90px;
+
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+#logo {
+    float: left;
+    padding: 0px 0 0 0px;
+    text-decoration: none;
+}
+
+#logo-header {
+    float: left;
+    padding: 0px 0px 0px 10px;
+    text-decoration: none;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+}
+
+#logo-header-menu{
+    float: left;
+    margin: 0px auto;
+    padding: 0px 0px 0px 30px;
+
+}
+
+#logo-header1 {
+    float: right;
+    margin: 0px auto;
+    padding: 0px 0px 0px 30px;
+    text-decoration: none;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 7pt;
+}
+
+
+.div01{
+    text-align: center;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 14pt;
+    color: #5D6D7E;
+}
+.div02{
+    text-align: center;
+}
+
+
+.tab01a{
+    width: 100%;
+    border-collapse: collapse; /* elimina los bordes*/
+    margin: 0 auto; /* para centrar después del div */
+}
+
+.tab01a th {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #F2F4F4; /* #EAEDED */ /* #039 */
+    padding: 8px;
+    background-color: #566573; /* #D5D8DC */
+    /*border-top: 4px solid #D5D8DC;   --  para border superior*/
+    /*border-bottom: 1px solid #D5D8DC;   --  para border inferior*/
+    background: #566573;
+}
+
+
+.tab01a tr:nth-child(even) {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #5D6D7E;
+    background-color: #EAECEE;
+}
+
+
+.tab01a tr:nth-child(odd) {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #5D6D7E;
+    background-color: #F2F4F4; /* #F2F4F4 */
+}
+/*//////////////////////////////////////////////////////////////////////////////*/
+.tab01b{
+    width: 80%;
+    border-collapse: collapse; /* elimina los bordes*/
+    margin: 0 auto; /* para centrar después del div */
+}
+
+.tab01b th {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #F2F4F4; /* #EAEDED */ /* #039 */
+    padding: 8px;
+    background-color: #566573; /* #D5D8DC */
+    /*border-top: 4px solid #D5D8DC;   --  para border superior*/
+    /*border-bottom: 1px solid #D5D8DC;   --  para border inferior*/
+    background: #566573;
+}
+
+
+.tab01b tr:nth-child(even) {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #5D6D7E;
+    background-color: #EAECEE;
+}
+
+
+.tab01b tr:nth-child(odd) {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 9pt;
+    color: #5D6D7E;
+    background-color: #F2F4F4; /* #F2F4F4 */
+}
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+                    /* iconos de acciones */
+#tdAcciones{
+    width: 25px;
+    
+}
+
+#aprobaciones{
+    height: 15px;
+    width: 16px;
+}
+#subir{
+    height: 14px;
+    width: 18px;
+}
+#descargar{
+    height: 14px;
+    width: 18px;
+}
+#correo{
+    height: 14px;
+    width: 14px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*
+ * Logo
+ */
+
+
+/*
+ * Navegación
+ */
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #0b76a6;
+}
+
+
+
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+
+    background: white;
+    /*width: 90%;*/
+    max-width: 1200px;
+    margin: 40px auto;
+
+    /*box-shadow: 0 0 10px rgba(0,0,0,.1);*/
+}
+
+#main-content header,
+#main-content .content {
+    padding: 40px;
+}
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+
+    background: #1B4F72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: white;
+}
